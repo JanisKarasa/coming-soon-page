@@ -1,0 +1,199 @@
+
+@font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+* {
+    font-family: AdiHaus;
+}
+
+body {
+    margin: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: #F2F2F2;
+}
+
+.all-container {
+    height: 800px;
+    width: 375px;
+    margin: 0px auto;
+    /* before change */
+    /* background-color: rgba(255, 255, 255, 1); */
+    /* After change */
+    background: url('https://assets.codepen.io/6060109/waves.png');
+    background-color: #FAFAFA;
+}
+
+.logo {
+    margin: 15px auto;
+    display: block;
+    padding-top: 15px;
+}
+
+.picture {
+    background-image: url('https://assets.codepen.io/6060109/mobile-shoes.jpg');
+    background-position: center;
+    background-size: 100%;
+    width: 376px;
+    height: 250px;
+}
+
+.message {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.headline-red {
+    /* color: #CD3A24; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 42px;
+    letter-spacing: 5px;
+    margin: 30px auto;
+    color: #2F80ED;
+}
+
+.headline-black {
+    width: 200px;
+    /* height: 100px; */
+    margin: 10px auto;
+    /* font-style: normal; */
+    font-weight: bold;
+    font-size: 48px;
+    /* line-height: 60px; */
+    text-align: center;
+    letter-spacing: 5px;
+    color: #423A3A;
+
+}
+
+p {
+    width: 311px;
+    height: 112px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0px auto;
+    color: #333333;
+}
+
+form {
+    display: flex;
+    /* border: 1px solid gray; */
+    width: 311px;
+    height: 48px;
+    margin: 30px auto;
+    border-radius: 3px;
+    mix-blend-mode: normal;
+}
+
+input[type="text"] {
+    width: 75%;
+    height: 48px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    /* border: none; */
+    /* border-radius: 3px */
+    
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+input[type="submit"] {
+    width: 25%;
+    height: 48px;
+    /* background-color: #333333; */
+    color: white;
+    /* font-weight: 700; */
+    font-size: 30px;
+    font-style: normal;
+    /* border: 1px solid #333333; */
+    border: none;
+    border-radius: 2px;
+    margin: auto;
+    /* After change */
+    background: rgb(96,96,96);
+    background: linear-gradient(90deg, rgba(96,96,96,1) 0%, rgba(48,48,48,1) 83%);
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+
+/* DESKTOP */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+
+    
+    body {
+        display: flex;
+        /* background: url("https://assets.codepen.io/6060109/destop-bg.png") no-repeat; */
+        background: url('https://assets.codepen.io/6060109/waves.png');
+        background-color: #FAFAFA;
+    }
+    .picture {
+        display: none;
+    }
+
+    .all-container {
+        width: 50%;
+        height: 100vh;
+        /* background-color: transparent; */
+
+        
+    }
+
+    .container * {
+        margin-left: 0px;
+    }
+
+    .container  {
+        width: 50%;
+        padding: 0px 90px;
+    }
+
+    .logo {
+        margin: 30px 0px 100px;
+        display: block;
+    }
+
+    p, .headline-black, .headline-red, form {
+        width: 375px;
+        text-align: left;
+    }
+
+    .headline-black, .headline-red {
+        width: 375px;
+        font-size: 64px;
+        /* margin-bottom: 0px; */
+        text-align: left;
+    }
+
+    .big-picture {
+        display: block;
+        width: 50%;
+        height: 100vh;
+        margin: 0px auto;
+        /* background: url("https://assets.codepen.io/6060109/athlete-big.png") 100%; */
+        /* background-size: cover; */
+        /* clip-path: polygon(0 0%, 100% 0, 100% 100%, 36% 100%); */
+        background: url('https://assets.codepen.io/6060109/shoes.png');
+        background-size: cover;
+    }
+}
